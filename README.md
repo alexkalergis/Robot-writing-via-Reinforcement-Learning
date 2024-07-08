@@ -1,6 +1,9 @@
 # Robot-Writing-via-Reinforcement-Learning
-This project is about creating a virtual environment of a 2-DOF robot that tries to learn how to write characters and shapes via reinforcement learning. Specifically we create 2 agents that uses two different Q-learning methods. Firstly, we use the simple Q-Learning algorithm and second the Deep Q-Learning. Finally, we compare the desired results and the algorithm performances.
+In this project we aim to solve a problem of a robotic hand trying to learn how to write alphabetical characters and/or other shapes. We created a physical 2 DOF robotic system that represents a human arm that only operates in x-axis and y-axis. The methodology we used is an adaptation of reinforcement learning and specifically the Q-Learning algorithm as an easier to understand, use and have the desired results with less time consuming and complexity. The robot writing though is not just a physical approach, it has also impact in humanity. Robot writing is a task that could be used for helping purposes in human with disabilities or/and in early education. further studies about reinforcement learning in robotic systems could also bring even better impact in humanity.
 
 
-https://github.com/alexkalergis/Robot-writing-via-Reinforcement-Learning/assets/105602973/755a75e8-1237-46cf-9391-eccd65931a55
+
+
+https://github.com/alexkalergis/Robot-writing-via-Reinforcement-Learning/assets/105602973/7fc7ad07-036c-4408-96a4-2ae66f0fa316
+
 
