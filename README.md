@@ -14,7 +14,9 @@ In this project we aim to solve a problem of a robotic hand trying to learn how 
 </div>
 
 ## Q-Learning vs Deep Q-Learning
-![11](https://github.com/alexkalergis/Robot-writing-via-Reinforcement-Learning/assets/105602973/b6daa534-32e2-4956-b4c5-e1163dac661f)
+<div align="center">
+  ![11](https://github.com/alexkalergis/Robot-writing-via-Reinforcement-Learning/assets/105602973/b6daa534-32e2-4956-b4c5-e1163dac661f)
+</div>
 
 
 
