@@ -2,8 +2,8 @@
 
 The aim of this project is to solve a problem of a robotic hand trying to learn how to write alphabetical characters and/or other shapes. We created a physical 2 DOF robotic system that represents a human arm that only operates in x-axis and y-axis. The methodology we used is an adaptation of reinforcement learning and specifically the Q-Learning algorithm as an easier to understand, use and have the desired results with less time consuming and complexity. The robot writing though is not just a physical approach, it has also impact in humanity. Robot writing is a task that could be used for helping purposes in human with disabilities or/and in early education. Further studies about reinforcement learning in robotic systems could also bring even better impact in humanity.
 
-## Reinforcement Learning Methods
-- **Q-Learning**: Model-free reinforcement learning, it can also be viewed as a method of asynchronous dynamic programming. It provides agents with the capability of learning to act optimally in Markovian domains by experiencing the consequences of actions, without requiring them to build maps of the domains.
+## Q-Learning
+Model-free reinforcement learning, it can also be viewed as a method of asynchronous dynamic programming. It provides agents with the capability of learning to act optimally in Markovian domains by experiencing the consequences of actions, without requiring them to build maps of the domains.
 
 ```
 Algorithm 1: Q-learning
@@ -23,7 +23,21 @@ repeat for each episode
 until all episodes are visited ;
 ```
 
-- **Deep Q-Learning**: An extension of the Q-learning algorithm that combines reinforcement learning with deep neural networks. It was introduced by DeepMind in 2013 and has been widely used for solving complex problems in RL. The key idea behind DQN is to use a deep neural network to approximate the Q-values instead of a traditional Q-table. This allows DQN to handle high-dimensional and continuous state spaces, making it suitable for tasks such as image recognition or game playing.
+- **State (𝑆)**: The state of the agent in the environment.
+- **Action (𝐴)**: A set of actions which the agent can perform.
+- **Reward (𝑅)**: For each action selected by the agent, the environment provides a reward. Usually, a scalar value.
+- **Discount factor (𝛾)**: This has the effect of valuing rewards received earlier higher than those received later (reflecting the value of a "good start"). 𝛾 may also be interpreted as the probability to succeed.
+- **Episodes**: The end of the stage, where agents can’t take new action. It happens when the agent has achieved the goal or failed.
+- **Quality Function**: Q(sₜ, aₜ) ← Q(sₜ, aₜ) + α * (rₜ₊₁ + γ * max(Q(sₜ₊₁, a')) - Q(sₜ, aₜ))
+
+  - Q(sₜ₊₁, aₜ): Expected optimal Q-value of doing the action in a particular state.
+  - Q(sₜ, aₜ): The current estimation of Q(sₜ₊₁, aₜ).
+
+- **Q-Table**: The agent maintains the Q-table of sets of states and actions.
+- **Temporal Differences (TD)**: Used to estimate the expected value of \( Q(s_{t+1}, a_t) \), by using the current state and action and previous state and action.
+
+## Deep Q-Learning
+An extension of the Q-learning algorithm that combines reinforcement learning with deep neural networks. It was introduced by DeepMind in 2013 and has been widely used for solving complex problems in RL. The key idea behind DQN is to use a deep neural network to approximate the Q-values instead of a traditional Q-table. This allows DQN to handle high-dimensional and continuous state spaces, making it suitable for tasks such as image recognition or game playing.
 
 ```
 Algorithm 2: Deep Q-learning
@@ -46,10 +60,8 @@ repeat for each episode
   until S is a terminalstate ;
 until all episodes are visited ;
 ```
-
-## Diagram
 <div align="center">
-  <img width="600" alt="11" src="https://github.com/alexkalergis/Robot-writing-via-Reinforcement-Learning/assets/105602973/2380c318-3388-4547-af58-88691ffaef90">
+  <img width="548" alt="image" src="https://github.com/alexkalergis/Robot-writing-via-Reinforcement-Learning/assets/105602973/bdf9a777-fc2f-4ebc-a8af-6d12f9567d7c">
 </div>
 
 
