@@ -10,7 +10,8 @@ Algorithm 1: Q-learning
 
 Input: episodes, α,γ
 Output: Q
-Initialize : set Q(s,a) arbitrarily, for each s in S and a in A; set Q(terminalstate,∙)=0;
+Initialize : set Q(s,a) arbitrarily, for each s in S and a in A;
+set Q(terminalstate,∙)=0;
 repeat for each episode
   Initialize S ;
   repeat for each step of episode
