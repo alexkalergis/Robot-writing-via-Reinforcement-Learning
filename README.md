@@ -1,3 +1,7 @@
+<div align="center">
+  <img width="200" alt="image" src="https://github.com/user-attachments/assets/adf5b3f6-b7c6-49a8-be23-b54325a8f1a5">
+</div>
+
 ## Project Overview
 
 The aim of this project is to solve a problem of a robotic hand trying to learn how to write alphabetical characters and/or other shapes. We created a physical 2 DOF robotic system that represents a human arm that only operates in x-axis and y-axis. The methodology we used is an adaptation of reinforcement learning and specifically the Q-Learning algorithm as an easier to understand, use and have the desired results with less time consuming and complexity. The robot writing though is not just a physical approach, it has also impact in humanity. Robot writing is a task that could be used for helping purposes in human with disabilities or/and in early education. Further studies about reinforcement learning in robotic systems could also bring even better impact in humanity.
